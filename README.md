@@ -20,3 +20,8 @@ Run http://localhost:8000/
 ```
 Run DB.sql inside data directory
 ```
+
+### Postman
+```
+Import json file inside data directory
+```
