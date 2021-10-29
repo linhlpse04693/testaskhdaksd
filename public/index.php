@@ -1,9 +1,7 @@
 <?php
 
-$app = require_once __DIR__ . './../bootstrap/app.php';
+use Src\App\Router;
 
-$kernel = $app->resolve(App\Http\HttpKernel::class);
+require_once dirname(__DIR__) . '/vendor/autoload.php';
 
-$kernel->bootstrapApplication();
-
-$app->run();
+Router::load(APPROOT . '/src/App/routes.php')->redirect();
